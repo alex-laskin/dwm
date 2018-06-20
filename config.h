@@ -26,7 +26,7 @@ static const char *colors[][4]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "web", "log", "comm", "+" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "w", "l", "c", "+" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -35,11 +35,13 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1,          0 },
-	{ "logs",     NULL,       NULL,       1 << 9,       0,           -1,          0 },
+  { "URxvt",    NULL,       "logs",     1 << 9,       0,           -1,          0 },
+  { "Xchat",    NULL,       NULL,       1 << 10,      0,           -1,          0 },
+  { "KeePass2", NULL,       NULL,       1 << 11,      0,           -1,          0 },
 };
 
 /* layout(s) */
-static const float mfact     = 0.55; /* factor of master area size [0.05..0.95] */
+static const float mfact     = 0.50; /* factor of master area size [0.05..0.95] */
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 
