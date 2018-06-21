@@ -37,6 +37,8 @@ static const Rule rules[] = {
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1,          0 },
   { "URxvt",    NULL,       "logs",     1 << 9,       0,           -1,          0 },
   { "Xchat",    NULL,       NULL,       1 << 10,      0,           -1,          0 },
+  { "TelegramDesktop",NULL, NULL,       1 << 10,      0,           -1,          1 },
+  { "Thunderbird",NULL,     NULL,       1 << 10,      0,           -1,          1 },
   { "KeePass2", NULL,       NULL,       1 << 11,      0,           -1,          0 },
 };
 
