@@ -783,7 +783,7 @@ createxkb(Window w){
     if (xkb == NULL) {
         die("fatal: could not malloc() %u bytes\n", sizeof *xkb);
     }
-    xkb->group = xkbGlobal.group;
+    xkb->group = 0;
     xkb->w = w;
     xkb->next = xkbSaved;
     if (xkbSaved != NULL) {
