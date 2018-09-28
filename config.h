@@ -113,7 +113,6 @@ static Key keys[] = {
 	TAGKEYS(                        XK_0,      9)
 	TAGKEYS(                        XK_minus,  10)
 	TAGKEYS(                        XK_equal,  11)
-	{ ctrl|alt,                     XK_q,      quit,           {0} },
 	{ ctrl|shift,                   XK_q,      quit,           {1} },
 };
 
